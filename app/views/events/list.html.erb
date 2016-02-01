@@ -1,0 +1,7 @@
+<h2>Events list for "<%= params[:calendar]%>" calendar</h2>
+
+<ul>
+<% @events_list.items.each do |event| %>
+  <li><%= event.summary %> <%= event.start.date || event.start.date_time %>  </li>
+<% end %>
+</ul>

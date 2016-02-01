@@ -1,0 +1,6 @@
+<h1>List of user's calendars</h1>
+<ul>
+<% @calendar_list.items.each do |calendar| %>
+  <li><%= calendar.summary %><a href='/events/list/?calendar=<%= calendar.summary %>'>  get events</a></li>
+<% end %>
+</ul>
